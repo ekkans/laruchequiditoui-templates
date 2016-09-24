@@ -1,0 +1,3 @@
+[submodule "source/writings"]
+	path = source/writings
+	url = git@github.com:ekkans/writings.git

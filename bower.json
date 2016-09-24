@@ -1,0 +1,20 @@
+{
+  "name": "Sébastien Bourdu",
+  "version": "0.0.1",
+  "homepage": "www.sebastienbourdu.com",
+  "authors": [
+    "Sebastien Bourdu <sebastien@sebastienbourdu.com>"
+  ],
+  "description": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-sass-mixins": "*"
+  }
+}
