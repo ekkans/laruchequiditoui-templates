@@ -30,7 +30,7 @@
 // $gray-lighter:              #eceeef;
 // $gray-lightest:             #f7f7f9;
 
-// $brand-primary:             #0275d8;
+$brand-primary:             $turquoise3;
 // $brand-success:             #5cb85c;
 // $brand-info:                #5bc0de;
 // $brand-warning:             #f0ad4e;
@@ -86,7 +86,7 @@
 //
 // Settings for the `<body>` element.
 
-// $body-bg:    #fff;
+$body-bg:    mix(#FFF, $turquoise2, 92%);
 // $body-color: $gray-dark;
 
 
@@ -118,19 +118,19 @@
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-// $container-max-widths: (
-//   sm: 576px,
-//   md: 720px,
-//   lg: 940px,
-//   xl: 1140px
-// );
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1440px
+);
 
 
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
-// $grid-columns:      12;
+$grid-columns:      10;
 // $grid-gutter-width: 30px;
 
 
@@ -144,7 +144,7 @@
 // $font-family-base:       $font-family-sans-serif;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-// $font-size-root: 16px;
+$font-size-root: 15px;
 
 // $font-size-base: 1rem;
 // $font-size-lg:   1.25rem;
@@ -284,9 +284,9 @@
 // $btn-toolbar-margin:             .5rem;
 
 // Allows for customizing button radius independently from global border radius
-// $btn-border-radius:              $border-radius;
-// $btn-border-radius-lg:           $border-radius-lg;
-// $btn-border-radius-sm:           $border-radius-sm;
+$btn-border-radius:              25px;
+$btn-border-radius-lg:           25px;
+$btn-border-radius-sm:           25px;
 
 
 // Forms
@@ -303,9 +303,9 @@
 // $input-btn-border-width:         $border-width; // For form controls and buttons
 // $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075);
 
-// $input-border-radius:            $border-radius;
-// $input-border-radius-lg:         $border-radius-lg;
-// $input-border-radius-sm:         $border-radius-sm;
+$input-border-radius:            4px;
+$input-border-radius-lg:         4px;
+$input-border-radius-sm:         4px;
 
 // $input-bg-focus:                 $input-bg;
 // $input-border-focus:             #66afe9;

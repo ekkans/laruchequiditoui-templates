@@ -19,11 +19,15 @@ html lang="fr"
 
     = partial 'shared/header'
 
-    .container-fluid
-      .row
-        .col-sm-12
-          main[role="main"]
+    main[role="main"]
+      .container
+        .row
+          .col-md-2
+            aside
+              = partial 'shared/sidebar'
+          .col-md-6
             == yield
+          .col-md-2
 
     = partial 'shared/footer'
 

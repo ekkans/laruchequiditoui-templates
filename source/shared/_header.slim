@@ -1,16 +1,38 @@
-nav.navbar.navbar-fixed-top.navbar-light.bg-faded
-  a.navbar-brand href="/"
-    | Le forum
-  ul.nav.navbar-nav
-    li.nav-item
-      a.nav-link href="#"
-        i.fa.fa-envelope-o
-        = " "
-        | Messages
-    li.nav-item
-      a.nav-link href="#"
-        i.fa.fa-bell-o
-        = " "
-        | Messages
-  form.form-inline.pull-xs-right
-    input.form-control placeholder="Search" type="text"
+header
+  nav.navbar.navbar-fixed-top
+    button { class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
+      data-target="#collapsingNavbar" aria-controls="collapsingNavbar"
+      aria-expanded="false" aria-label="Toggle navigation" }
+      | &#9776;
+    #collapsingNavbar.collapse.navbar-toggleable-xs
+      .container
+        .row
+          .col-md-2
+            a.navbar-brand href="/"
+              img src="/images/logo.png"
+              | Le forum
+          .col-md-4
+            form role="search"
+              .input-group
+                .input-group-btn.input-group-btn-inside.input-group-btn-inside-lg
+                  i.fa.fa-search
+                input.form-control.form-control-lg.form-control-with-icon-left.form-control-with-icon-left-lg {
+                  placeholder="Rechercher" type="text" }
+          .col-md-4
+            ul.nav.navbar-nav.pull-lg-right
+              li.nav-item
+                button.btn.btn-primary type="submit"
+                  | Créer un sujet
+              li.nav-item
+                a.nav-link href="#"
+                  i.fa.fa-envelope-o
+                  = " "
+                  | Messages
+              li.nav-item
+                a.nav-link href="#"
+                  i.fa.fa-bell-o
+                  = " "
+                  | Messages
+              li.nav-item
+                img.img-circle { width="42px" height="42px"
+                  src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/42/5_1.png" }
