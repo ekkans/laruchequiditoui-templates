@@ -58,9 +58,9 @@ $brand-primary:             $turquoise3;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-// $spacer:   1rem;
-// $spacer-x: $spacer;
-// $spacer-y: $spacer;
+$spacer:   1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
 // $spacers: (
 //   0: (
 //     x: 0,
@@ -97,7 +97,7 @@ $body-bg:    mix(#FFF, $turquoise2, 92%);
 // $link-color:            $brand-primary;
 // $link-decoration:       none;
 // $link-hover-color:      darken($link-color, 15%);
-// $link-hover-decoration: underline;
+$link-hover-decoration: none;
 
 
 // Grid breakpoints
@@ -147,15 +147,15 @@ $grid-columns:      10;
 $font-size-root: 15px;
 
 // $font-size-base: 1rem;
-// $font-size-lg:   1.25rem;
+$font-size-lg:   1.2rem;
 // $font-size-sm:   .875rem;
 // $font-size-xs:   .75rem;
 
 // $line-height-base: 1.5;
 
 // $font-size-h1: 2.5rem;
-// $font-size-h2: 2rem;
-// $font-size-h3: 1.75rem;
+$font-size-h2: 1.8rem;
+$font-size-h3: 1.6rem;
 // $font-size-h4: 1.5rem;
 // $font-size-h5: 1.25rem;
 // $font-size-h6: 1rem;
@@ -170,11 +170,11 @@ $font-size-root: 15px;
 // $display3-weight: 300;
 // $display4-weight: 300;
 
-// $headings-margin-bottom: ($spacer / 2);
-// $headings-font-family:   inherit;
+$headings-margin-bottom: $spacer;
+$headings-font-family: $font-family-serif;
 // $headings-font-weight:   500;
-// $headings-line-height:   1.1;
-// $headings-color:         inherit;
+$headings-line-height:   1.25em;
+$headings-color:       $turquoise3;
 
 // $lead-font-size:   1.25rem;
 // $lead-font-weight: 300;
@@ -200,7 +200,7 @@ $font-size-root: 15px;
 // $kbd-box-shadow:         inset 0 -.1rem 0 rgba(0,0,0,.25);
 // $nested-kbd-font-weight: bold;
 
-// $list-inline-padding: 5px;
+$list-inline-padding: 21px;
 
 
 // Components
@@ -277,8 +277,8 @@ $font-size-root: 15px;
 // $btn-padding-x-sm:               .5rem;
 // $btn-padding-y-sm:               .25rem;
 
-// $btn-padding-x-lg:               1.5rem;
-// $btn-padding-y-lg:               .75rem;
+$btn-padding-x-lg:               2.6rem;
+$btn-padding-y-lg:               .9rem;
 
 // $btn-block-spacing-y:            .5rem;
 // $btn-toolbar-margin:             .5rem;
@@ -477,8 +477,8 @@ $input-border-radius-sm:         4px;
 // Navs
 
 // $nav-item-margin:               .2rem;
-// $nav-item-inline-spacer:        1rem;
-// $nav-link-padding:              .5em 1em;
+$nav-item-inline-spacer:        1.25rem;
+$nav-link-padding:              .5em 1em;
 // $nav-link-hover-bg:             $gray-lighter;
 // $nav-disabled-link-color:       $gray-light;
 // $nav-disabled-link-hover-color: $gray-light;
@@ -556,14 +556,14 @@ $input-border-radius-sm:         4px;
 
 
 // Cards
-// $card-spacer-x:            1.25rem;
-// $card-spacer-y:            .75rem;
+$card-spacer-x:            2rem;
+$card-spacer-y:            2rem;
 // $card-border-width:        1px;
-// $card-border-radius:       $border-radius;
-// $card-border-color:        rgba(0,0,0,.125);
+$card-border-radius:       0;
+$card-border-color:        transparent;
 // $card-border-radius-inner: $card-border-radius;
 // $card-cap-bg:              #f5f5f5;
-// $card-bg:                  #fff;
+$card-bg:                  transparent;
 
 // $card-link-hover-color:    #fff;
 
@@ -613,19 +613,19 @@ $input-border-radius-sm:         4px;
 
 // Tags
 
-// $tag-default-bg:            $gray-light;
+$tag-default-bg:            $turquoise1;
 // $tag-primary-bg:            $brand-primary;
 // $tag-success-bg:            $brand-success;
 // $tag-info-bg:               $brand-info;
 // $tag-warning-bg:            $brand-warning;
 // $tag-danger-bg:             $brand-danger;
 
-// $tag-color:                 #fff;
+$tag-color:                 $turquoise2;
 // $tag-link-hover-color:      #fff;
-// $tag-font-size:             75%;
-// $tag-font-weight:           bold;
-// $tag-padding-x:             .4em;
-// $tag-padding-y:             .25em;
+$tag-font-size:             1.4rem;
+$tag-font-weight:           500;
+$tag-padding-x:             1.2rem;
+$tag-padding-y:             .8rem;
 
 // $tag-pill-padding-x:        .6em;
 // Use a higher than normal value to ensure completely rounded edges when

@@ -2,5 +2,109 @@
 title: Home
 ---
 
-h5
-  | Actualités
+nav.nav.nav-inline.nav-inline-lg
+  a.nav-link.active href="#"
+    | Actualités
+  a.nav-link.notified href="#"
+    | Mon suivi
+  a.nav-link href="#"
+    | Mes posts
+  a.nav-link href="#"
+    | Les plus actifs
+
+- 5.times do
+  .card
+    .card-block
+      .pull-right.m-l-1
+        img { src="http://placehold.it/190x190"
+          width="190px" height="190px"
+        }
+      h2.card-title
+        strong
+          | Faciliter la validation et la clôture des distributions pour les RR
+      .card-meta-data
+        a href="#"
+          img.img-circle.pull-left { src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/45/5_1.png"
+            width="45px" height="45px"
+          }
+        a href="#"
+          strong
+            | Stéphane B.
+        span.separator
+          = " – "
+        span
+          | RR depuis 2 ans à La Rochelle (Poitou-Charentes)
+        .text-muted
+          | il y a 30 minutes
+      p.card-text
+        | Hiliam solutectur rehendam quist quunt et haruptatia qui bea apedipi delitinti
+          siti berum uptatiis vendi ut vellibus ma namus mincit que sequaspition
+          exerionse moluptas undelit
+        | &hellip;
+        br
+        a href="#"
+          strong
+            | Voir plus
+      ul.list-inline.m-b-0
+        li.list-inline-item.font-weight-bold
+          a href="#"
+            i.fa.fa-comment
+            = " "
+            | 6
+            = " "
+            span.action
+              | Répondre
+        li.list-inline-item.font-weight-bold
+          a href="#"
+            i.fa.fa-heart-o
+            = " "
+            | 8
+        li.list-inline-item
+          a href="#"
+            span.tag.tag-default.font-weight-bold
+              | Distribution
+    ul.list-group.list-group-flush
+      li.list-group-item.list-group-item-sm
+        a href="#"
+          strong
+            | voir les autres commentaires
+      - 3.times do
+        li.list-group-item.p-y-1
+          a href="#"
+            img.img-circle.pull-left { src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/30/5_1.png"
+              width="30px" height="30px"
+            }
+          .pushed-content
+            a href="#"
+              strong
+                | Clem.75
+            span
+              = " "
+              | uptatiis vendi ut vellibus ma namus mincit que sequaspition exerionse moluptas
+              | erae porese quo dest ma aut labore verit quo voluptatum ipid dolores
+              | &hellip;
+              br
+              a.see-more href="#"
+                strong
+                  | Voir plus
+            ul.list-inline
+              li.list-inline-item
+                a href="#"
+                  strong
+                    | Répondre
+              li.list-inline-item
+                a href="#"
+                  strong
+                    | Aimer
+              li.list-inline-item
+                | il y a 30 minutes
+      li.list-group-item.p-y-1.list-group-item-btn
+        a href="#"
+          a href="#"
+            img.img-circle.pull-left { src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/30/5_1.png"
+              width="30px" height="30px"
+            }
+          .pushed-content
+            a href="#"
+              strong
+                | Répondre à cette discussion

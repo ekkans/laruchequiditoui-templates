@@ -1,2 +1,17 @@
 h3
-  | Échanger vos idées, partager vos expériences, interroger la communauté
+  strong
+    em
+      | Échanger vos idées, partager vos expériences, interroger la communauté
+
+button.btn.btn-primary.btn-lg type="submit"
+  | Créer un sujet
+
+h6.text-uppercase
+  strong
+    | Les catégories
+
+ul.list-unstyled
+  - ['Distribution', 'Site', 'Producteur'].each do |tag|
+    li
+      a href='#'
+        span.tag.tag-default= tag
