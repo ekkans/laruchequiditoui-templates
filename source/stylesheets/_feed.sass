@@ -25,21 +25,45 @@
     .see-more
       line-height: 1.6em
     .list-inline-item
+      position: relative
       > a
         color: $turquoise2
+        &:hover, &:focus
+          color: $purple2
       &:not(:last-child)
-        margin-right: 12px
+        margin-right: 16px
+        &:after
+          content: ""
+          width: 4px
+          height: 4px
+          background: $turquoise2
+          border-radius: 50px
+          position: absolute
+          top: 9px
+          right: -10px
     &.list-group-item-sm
       padding:
         top: 10px
         bottom: 10px
       > a
         color: $turquoise3
+        &:hover, &:focus
+          color: $purple2
     &.list-group-item-btn
       margin-top: 3px
       border-radius: 30px !important
+      padding: 0 !important
+      &:hover, &:focus
+        background-color: $purple2
+      > a
+        &:hover, &:focus
+          color: white
       .img-circle.pull-left
-        margin-top: -5px
+        margin-top: 10px
+        margin-left: 2rem
+      .pushed-content
+        padding: 1rem 0
+        margin-left: 70px
   .font-weight-bold
     .fa
       font-weight: bold !important

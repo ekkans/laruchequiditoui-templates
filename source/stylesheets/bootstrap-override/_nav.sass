@@ -10,3 +10,13 @@
       border-bottom: 3px solid $purple2
     &.notified
       font-weight: bold
+      position: relative
+      &:after
+        content: ""
+        width: 6px
+        height: 6px
+        background: $purple2
+        border-radius: 50px
+        position: absolute
+        top: 6px
+        right: -8px
