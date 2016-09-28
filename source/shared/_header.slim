@@ -28,15 +28,63 @@ header
                 button.btn.btn-primary type="submit"
                   | Créer un sujet
               li.nav-item
-                a.nav-link href="#"
-                  i.fa.fa-envelope-o
-                  = " "
-                  | Messages
+                .dropdown
+                  a#dropdownMessages.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#"
+                    i.fa.fa-envelope-o
+                    = " "
+                    | Messages
+                  .dropdown-menu.dropdown-menu-right aria-labelledby="dropdownMessages"
+                    h6.dropdown-header
+                      | Vos derniers messages
+                    - 3.times do |index|
+                      a.dropdown-item class="#{'read' if index == 2}" href="#"
+                        .dropdown-item-content
+                          img.img-circle.pull-left.m-r-1 height="45px" src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/45/5_1.png" width="45px" /
+                          .pushed-content
+                            strong
+                              | Camille Premier
+                              = " "
+                            small.text-muted
+                              | il y a 2j
+                            .text-muted
+                              | You can set text wrap to only affect objects…
+                    .dropdown-item
+                      .dropdown-item-content.dropdown-item-content-btn
+                        a.btn.btn-secondary.btn-block href="#"
+                          | Voir les autres messages
               li.nav-item
-                a.nav-link href="#"
+                a#dropdownMessages.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#"
                   i.fa.fa-bell-o
                   = " "
-                  | Messages
+                  | Notifications
+                .dropdown-menu.dropdown-menu-right aria-labelledby="dropdownMessages"
+                  h6.dropdown-header
+                    | Notifications
+                  - 3.times do |index|
+                    .dropdown-item class="#{'read' if index == 2}"
+                      .dropdown-item-content
+                        a href="#"
+                          img.img-circle.pull-left.m-r-1 height="45px" src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/45/5_1.png" width="45px" /
+                        .pushed-content
+                          a href="#"
+                            strong
+                              | Camille Premier
+                            = " "
+                          span.text-muted
+                            | a répondu à
+                          a href="#"
+                            = " "
+                            | Faciliter la validation et la clôture des distributions pour les RR
+                          .small
+                            i.fa.fa-comment
+                            span.text-muted
+                              = " "
+                              | il y a 2j
+                  .dropdown-item
+                    .dropdown-item-content.dropdown-item-content-btn
+                      a.btn.btn-secondary.btn-block href="#"
+                        | Voir toutes les notifications
+              li.nav-item
               li.nav-item
                 img.img-circle { width="42px" height="42px"
                   src="http://laruchequiditoui.sebastienbourdu.com/user_avatar/laruchequiditoui.sebastienbourdu.com/ekkans/42/5_1.png" }

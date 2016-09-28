@@ -1,0 +1,41 @@
+.dropdown-menu
+  border-radius: 0
+  padding-bottom: 0
+.dropdown-menu-right
+  width: 290px
+
+.dropdown-toggle
+  &::after
+    display: none
+
+.dropdown-header
+  font-size: .8rem
+  font-family: $font-family-sans-serif
+  text-transform: uppercase
+  text-align: left
+  margin: 0
+  border-bottom: 1px solid mix(#FFF, $turquoise2, 92%)
+
+.dropdown-item
+  padding: 0 10px
+  white-space: normal
+  color: $turquoise2
+  .img-circle
+    border: 1px solid $turquoise1
+    &.m-r-1
+      margin-right: 10px !important
+  &.read
+    background-color: mix(#FFF, $turquoise2, 92%)
+  .dropdown-item-content
+    padding: 10px 0
+    border-bottom: 1px solid mix(#FFF, $turquoise2, 92%)
+    .pushed-content
+      margin-left: 55px
+  .dropdown-item-content-btn
+    border: none
+    .btn
+      padding: 8px 30px
+      font-size: 1rem
+  &:last-of-type
+    .dropdown-item-content
+      border-bottom: none

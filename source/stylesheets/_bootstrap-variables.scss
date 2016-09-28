@@ -252,9 +252,9 @@ $list-inline-padding: 21px;
 // $btn-primary-bg:                 $brand-primary;
 // $btn-primary-border:             $btn-primary-bg;
 
-// $btn-secondary-color:            $gray-dark;
-// $btn-secondary-bg:               #fff;
-// $btn-secondary-border:           #ccc;
+$btn-secondary-color:            $turquoise2;
+$btn-secondary-bg:               $turquoise1;
+$btn-secondary-border:           $turquoise1;
 
 // $btn-info-color:                 #fff;
 // $btn-info-bg:                    $brand-info;
@@ -417,27 +417,27 @@ $input-border-radius-sm:         4px;
 //
 // Dropdown menu container and contents.
 
-// $dropdown-min-width:             160px;
+$dropdown-min-width:             290px;
 // $dropdown-padding-y:             5px;
 // $dropdown-margin-top:            2px;
 // $dropdown-bg:                    #fff;
-// $dropdown-border-color:          rgba(0,0,0,.15);
+$dropdown-border-color:          mix(#FFF, $turquoise3, 80%);
 // $dropdown-border-width:          $border-width;
 // $dropdown-divider-bg:            #e5e5e5;
-// $dropdown-box-shadow:            0 6px 12px rgba(0,0,0,.175);
+$dropdown-box-shadow:            0 6px 12px rgba(0,0,0,.175);
 
 // $dropdown-link-color:            $gray-dark;
 // $dropdown-link-hover-color:      darken($gray-dark, 5%);
-// $dropdown-link-hover-bg:         #f5f5f5;
+$dropdown-link-hover-bg:         mix(#FFF, $turquoise2, 95%);
 
 // $dropdown-link-active-color:     $component-active-color;
 // $dropdown-link-active-bg:        $component-active-bg;
 
 // $dropdown-link-disabled-color:   $gray-light;
 
-// $dropdown-item-padding-x:        20px;
+$dropdown-item-padding-x:        10px;
 
-// $dropdown-header-color:          $gray-light;
+$dropdown-header-color:          $turquoise2;
 
 
 // Z-index master list
