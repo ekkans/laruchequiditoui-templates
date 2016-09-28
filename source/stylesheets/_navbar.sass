@@ -11,11 +11,15 @@
     size: 2.8rem
   text-transform: uppercase
   padding: 0
+  &:hover
+    color: $turquoise3
   > img
     display: inline-block
     margin:
       top: -18px
       right: 10px
+.navbar-text
+  display: none
 
 .navbar-fixed-top
   .nav-link
@@ -32,6 +36,9 @@
     font-size: 1.2rem
     .input-group-btn, input
       padding: .9rem 1.5rem
+    input
+      +placeholder
+        color: $turquoise3
   .form-control-lg
     background-color: mix(#FFF, $turquoise2, 90%)
     border-radius: 4px !important
@@ -42,6 +49,7 @@
   margin: 6px 10px
   z-index: 10
   font-size: inherit
+  top: -3px
 .input-group-btn-inside-lg
   margin: 0
   padding-left: 1rem !important
@@ -50,4 +58,32 @@
 .form-control-with-icon-left
   padding-left: 30px
 .form-control-with-icon-left-lg
-  padding-left: 38px !important
+  padding-left: 40px !important
+
+.navbar-search-focus
+  background: $purple2
+  .navbar-brand, .nav-item
+    display: none
+  li:last-of-type
+    display: list-item
+  .navbar-text
+    font-size: 1.2rem
+    padding: 12px
+    margin-bottom: 0
+    font-weight: bold
+    visibility: visible !important
+    display: block
+    a
+      color: white
+    i
+      margin-right: .2rem
+  .img-circle
+    border-color: white
+  .form-control-lg
+    background-color: white
+  .row
+    .col-md-4
+      width: 60%
+      transition: .5s width
+    > div:last-of-type
+      width: 20%
