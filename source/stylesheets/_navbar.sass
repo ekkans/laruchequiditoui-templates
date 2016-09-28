@@ -44,6 +44,21 @@
     border-radius: 4px !important
     border: none
 
+.navbar-mobile
+  padding: 0 1rem
+  button.pull-right
+    margin: 8px 0
+
+.navbar-toggleable
+  &-md
+    clear: both
+    @include media-breakpoint-down(md)
+      .navbar-nav .nav-item
+        float: left
+        margin-left: 1rem
+      .col-md-5
+        padding: .5rem 1rem
+
 .input-group-btn-inside
   position: absolute
   margin: 6px 10px
@@ -60,33 +75,34 @@
 .form-control-with-icon-left-lg
   padding-left: 40px !important
 
-.navbar-search-focus
-  background: $purple2
-  .navbar-brand, .nav-item
-    display: none
-  li:last-of-type
-    display: list-item
-  .navbar-text
-    font-size: 1.2rem
-    padding: 12px
-    margin-bottom: 0
-    font-weight: bold
-    visibility: visible !important
-    display: block
-    a
-      color: white
-    i
-      margin-right: .2rem
-  .img-circle
-    border-color: white
-  .form-control-lg
-    background-color: white
-  .row
-    .col-md-4
-      width: 60%
-      transition: .5s width
-    > div:last-of-type
-      width: 20%
+@include media-breakpoint-up(lg)
+  .navbar-search-focus
+    background: $purple2
+    .navbar-brand, .nav-item
+      display: none
+    li:last-of-type
+      display: list-item
+    .navbar-text
+      font-size: 1.2rem
+      padding: 12px
+      margin-bottom: 0
+      font-weight: bold
+      visibility: visible !important
+      display: block
+      a
+        color: white
+      i
+        margin-right: .2rem
+    .img-circle
+      border-color: white
+    .form-control-lg
+      background-color: white
+    .row
+      .col-md-5
+        width: 60%
+        transition: .5s width
+      > div:last-of-type
+        width: 20%
 
 span.twitter-typeahead
   width: 100%
