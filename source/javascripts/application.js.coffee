@@ -1,4 +1,7 @@
 #= require bootstrap-custom
+#= require typeahead.js/dist/typeahead.jquery.min
+#= require handlebars/handlebars.min
+#= require search
 
 $ ->
   $search = $('input')

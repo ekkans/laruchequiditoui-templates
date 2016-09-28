@@ -87,3 +87,39 @@
       transition: .5s width
     > div:last-of-type
       width: 20%
+
+span.twitter-typeahead
+  width: 100%
+
+  .tt-menu
+    @extend .dropdown-menu
+    width: 100%
+    margin-top: 10px
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+
+  .tt-suggestion
+    @extend .dropdown-item
+    padding: 10px 20px
+
+    &.tt-cursor
+      @extend .dropdown-item.active
+      &, &:hover, &:focus
+        background-color: mix(#FFF, $turquoise2, 90%)
+
+  .input-group &
+    display: block !important
+    .tt-menu
+      top: (2 * $input-padding-y + $font-size-base * $line-height-base + 2 * $input-btn-border-width / $font-size-root) !important
+
+  h3
+    margin-bottom: 0
+
+  p
+    font-size: 1rem
+    color: rgb(100, 100, 100)
+    margin-bottom: 0
+    margin: 5px 0
+
+  .tag
+    padding: 5px
+    font-size: 1rem
