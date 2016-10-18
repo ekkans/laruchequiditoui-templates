@@ -180,7 +180,7 @@ Then add the following code in the head tab and don't forget to paste in cssUrl 
   api.onPageChange((url) => {
     var cssUrl = undefined; // replace undefined by the value of $('.custom-css').attr('href')
 
-    if($('.custom-css').length == 0) {
+    if(url.substring(0, 6) == '/admin') {
       $('head').append('<link href="' + cssUrl + '" rel="stylesheet" />');
     }
 
