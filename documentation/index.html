@@ -47,7 +47,7 @@ poll (0.9).</p>
 <li><p><em>topic list excerpts</em> = enabled</p></li>
 <li><p><em>topic list actions</em> = enabled</p></li>
 <li><p><em>topic list show like on current users posts</em> = enabled</p></li>
-<li><p><em>topic list excerpt length</em> = 400</p></li>
+<li><p><em>topic list excerpt length</em> = 200</p></li>
 <li><p><em>lrqdo enabled</em> = enabled</p></li>
 </ul>
 
@@ -129,6 +129,7 @@ vi container/app.yml
 <span class="k">@import</span> <span class="s1">"common/base/user-badges"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"common/base/username_tagsinput"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"common/d-editor"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">"common/topic-timeline"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"desktop/banner"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"desktop/compose"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"desktop/login"</span><span class="p">;</span>
@@ -139,7 +140,6 @@ vi container/app.yml
 <span class="nc">.posts</span> <span class="p">{</span>
     <span class="err">@import</span> <span class="err">"desktop/topic-post";</span>
 <span class="p">}</span>
-<span class="k">@import</span> <span class="s1">"desktop/topic-timeline"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"desktop/topic"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"desktop/upload"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">"desktop/user"</span><span class="p">;</span>
