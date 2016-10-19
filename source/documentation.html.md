@@ -53,7 +53,7 @@ And change default values for:
 
 - *topic list show like on current users posts* = enabled
 
-- *topic list excerpt length* = 400
+- *topic list excerpt length* = 200
 
 - *lrqdo enabled* = enabled
 
@@ -146,6 +146,7 @@ Add the following code in the css tab:
 @import "common/base/user-badges";
 @import "common/base/username_tagsinput";
 @import "common/d-editor";
+@import "common/topic-timeline";
 @import "desktop/banner";
 @import "desktop/compose";
 @import "desktop/login";
@@ -156,7 +157,6 @@ Add the following code in the css tab:
 .posts {
     @import "desktop/topic-post";
 }
-@import "desktop/topic-timeline";
 @import "desktop/topic";
 @import "desktop/upload";
 @import "desktop/user";
