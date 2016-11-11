@@ -1,0 +1,30 @@
+#editor.hide
+  .editor-header
+    .container-fluid
+      .row
+        .col-md-2
+          a.editor-header-text href="#"
+            i.fa.fa-chevron-left
+            = " "
+            | Retour
+        .col-md-6
+          h2
+            | Créer un sujet
+  .editor-body
+    h1.editable
+    textarea.editable rows="4" cols="50"
+  .editor-footer
+    .container-fluid
+      .row
+        .col-md-6.offset-md-2
+          button.btn.btn-default
+            | Poster
+          select.form-control
+            option
+              | Option
+        .col-md-2
+          .pull-right.form-check
+            label.form-check-label
+              input.form-check-input type="checkbox" name="markdown"
+              = " "
+              | Markdown

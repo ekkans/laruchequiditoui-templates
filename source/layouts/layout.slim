@@ -10,6 +10,7 @@ html lang="fr"
     link rel="shortcut icon" href="#{image_path('favicon.ico')}" type="image/x-icon"
 
     == stylesheet_link_tag 'application'
+    == stylesheet_link_tag 'editor'
     script src="https://use.fontawesome.com/37d3194b4f.js"
     script { src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -29,6 +30,8 @@ html lang="fr"
             == yield
           .col-xl-2
 
+    = partial 'shared/editor'
     = partial 'shared/footer'
 
     == javascript_include_tag 'application'
+    == javascript_include_tag 'editor'

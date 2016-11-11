@@ -4,7 +4,7 @@
 #= require search
 
 $ ->
-  $search = $('input')
+  $search = $('header input')
   $search.focusin ->
     $('header > .navbar').addClass 'navbar-search-focus'
   $search.focusout ->

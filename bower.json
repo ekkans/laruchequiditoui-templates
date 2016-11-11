@@ -17,6 +17,7 @@
   "dependencies": {
     "compass-sass-mixins": "*",
     "typeahead.js": "~0.11.1",
-    "handlebars": "~4.0.5"
+    "handlebars": "~4.0.5",
+    "medium-editor-insert-plugin": "~2.4.0"
   }
 }

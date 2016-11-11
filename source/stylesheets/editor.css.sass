@@ -1,0 +1,54 @@
+@import lrqdo-couleurs
+$purple2: $mauve2
+
+@import editor/bootstrap-switch
+
+@import medium-editor/dist/css/medium-editor
+@import medium-editor/dist/css/themes/default
+@import medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin
+
+#editor
+  position: fixed
+  top: 0
+  z-index: 10000
+  background: white
+  width: 100%
+  height: 100%
+
+  .editor-header
+    padding: 0.5rem 0
+    background: mix(#FFF, $turquoise2, 92%)
+    .editor-header-text
+      font-size: 1.2rem
+      padding: 7px
+      display: block
+      margin-bottom: 0
+      font-weight: bold
+      i.fa-chevron-left
+        margin-right: 0.2rem
+    h2, .h2
+      text-align: center
+      text-transform: uppercase
+      font-family: "League Gothic"
+      font-size: 2.2rem
+      margin-bottom: 0
+
+  .editor-body
+    max-width: 600px
+    margin: 0 auto
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-50%)
+
+  .editor-footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    select.form-control
+      width: initial
+      display: inline-block
+
+.medium-editor-toolbar
+  z-index: 10001
