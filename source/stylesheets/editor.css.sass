@@ -34,13 +34,22 @@ $purple2: $mauve2
       margin-bottom: 0
 
   .editor-body
-    max-width: 600px
+    max-width: 650px
     margin: 0 auto
     position: absolute
     top: 50%
     left: 0
     right: 0
     transform: translateY(-50%)
+    h1, .h1
+      margin-bottom: 0
+      font-size: 3.2rem
+      font-weight: bold
+      color: $turquoise2
+      &:after
+        margin-top: 0
+    h2, h3
+      margin-top: 2rem
 
   .editor-footer
     position: absolute
@@ -50,5 +59,70 @@ $purple2: $mauve2
       width: initial
       display: inline-block
 
+.medium-editor-placeholder:after
+  color: rgb(180, 180, 180)
+  font-style: normal
+  cursor: text
+  margin-top: -2rem
+
+.medium-editor-element
+  font-size: 1.4rem
+  color: rgb(100, 100, 100)
+  line-height: 1.5em
+  a
+    color: $purple2
+  &:focus
+    outline: none
+
+.medium-editor-insert-plugin p
+  &:first-of-type
+    margin-top: 0
+
 .medium-editor-toolbar
   z-index: 10001
+
+.medium-editor-toolbar
+  border-radius: 8px
+  background: $turquoise3
+  border: none
+  box-shadow: none
+  li button
+    background: $turquoise3
+    border: none
+    box-shadow: none
+    color: mix(#FFF, $turquoise2, 50%)
+    font-size: 1.4rem
+    padding: 10px
+    &:hover, &.medium-editor-button-active
+      background: $turquoise3
+      color: white
+
+.medium-editor-toolbar-form
+  background: white
+  border-radius: 8px
+  border: 1px solid $purple2
+  &, a
+    color: $purple2
+  .medium-editor-toolbar-input
+    background: white
+    color: $purple2
+    height: auto
+    margin: 2px
+
+.medium-toolbar-arrow-under:after
+  border-color: transparent transparent transparent transparent
+
+.medium-editor-insert-plugin .medium-insert-buttons
+  left: -40px !important
+  button
+    background: $purple2
+    border: none
+    color: white
+  li button
+    background: none
+    color: $purple2
+    .fa
+      font-size: 1.5rem !important
+      margin-top: 6px
+  .medium-insert-buttons-addons
+    left: 48px
