@@ -11,7 +11,16 @@
 $ ->
   $('.markdown-container').hide()
   $('.markdown-container').removeClass 'invisible'
-  $('#editor').show()
+
+  $('header .btn-primary, aside .btn-primary').on 'click', ->
+    setTimeout ->
+      $('main').hide()
+    , 600
+    $('#editor').addClass('visible')
+  $('a.editor-header-text').on 'click', ->
+    $('#editor').removeClass('visible')
+    $('main').show()
+
   $markdownSwitch = $('#editor input[name=markdown]')
   $markdownSwitch.bootstrapSwitch
     inverse: true
@@ -39,15 +48,46 @@ $ ->
         cleanedMarkdown = markdown.split('<div class="medium-insert-buttons"')[0]
         markDownEl.text cleanedMarkdown
     toolbar:
-      buttons: ['bold'
+      buttons: [
+        {
+          name: 'bold'
+          action: 'bold'
+          aria: 'bold'
+          tagNames: ['b', 'strong']
+          contentDefault: '<b>G</b>'
+        }
         'italic'
-        'strikethrough'
+        {
+          name: 'strikethrough'
+          action: 'strikethrough'
+          aria: 'strike through'
+          tagNames: ['s', 'strike']
+          contentDefault: '<i class="fa fa-strikethrough"></i>'
+        }
         'h2'
         'h3'
-        'unorderedlist'
-        'orderedlist'
+        {
+          name: 'unorderedlist'
+          action: 'insertunorderedlist'
+          aria: 'unordered list'
+          tagNames: ['ul']
+          contentDefault: '<i class="fa fa-list-ul"></i>'
+        }
+        {
+          name: 'orderedlist'
+          action: 'insertorderedlist'
+          aria: 'ordered list'
+          tagNames: ['ol']
+          contentDefault: '<i class="fa fa-list-ol"></i>'
+        }
         'quote'
-        'anchor'
+        {
+          name: 'anchor'
+          action: 'createlink'
+          aria: 'link'
+          tagNames: ['a']
+          contentDefault: '<i class="fa fa-link"></i>'
+        }
       ]
     placeholder:
       text: 'et commencer votre message ici (taper " : " pour les émojis :D)'
