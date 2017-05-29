@@ -1,6 +1,8 @@
 La ruche qui dit oui - Forum (templates)
 ========================================
 
+![interface](https://cloud.githubusercontent.com/assets/88243/24135485/b64cda76-0e55-11e7-812f-8def24d183c9.png)
+
 ## Start server
 
 `bundle exec middleman`
